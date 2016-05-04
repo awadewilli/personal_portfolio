@@ -1,0 +1,166 @@
+$theme-red:#E71D36;
+$theme-teal:#2EC4B6;
+$theme-green:#EFFEE9;
+$theme-navy:#011627;
+
+@font-face {
+  font-family: 'Montserrat';
+  src:  url('../fonts/Montserrat-Regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:  url('../fonts/Montserrat-Light.otf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:  url('../fonts/Montserrat-Hairline.otf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src:  url('../fonts/Montserrat-SemiBold.otf');
+  font-weight: semi-bold;
+}
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+header{
+  font-family: 'Montserrat';
+  font-weight: 200;
+  padding:10px;
+  h1{
+    display: inline-block;
+  }
+  img{
+    display: inline-block;
+    max-width: 75px;
+    margin-bottom: 10px;
+  }
+  ul{
+    list-style: none;
+    float:right;
+    margin:25px auto;
+  }
+  li{
+    display: inline-block;
+    padding:0px 10px;
+    border-right:solid 1px $theme-navy;
+  }
+}
+.splash-img{
+  background-image: url('../images/photo-1453928582365-b6ad33cbcf64.jpeg');
+  background-size: cover;
+  height:500px;
+  position: relative;
+    h1{
+      color:white;
+      font-weight: semi-bold;
+      bottom:0px;
+      font-family: 'Montserrat';
+      align:bottom;
+    }
+}
+.splash-img::before {
+  height:500px;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:$theme-teal;
+  opacity: 0.3;
+}
+.about{
+  background-color: $theme-navy;
+  height:300px;
+  h3{
+    color:$theme-teal;
+    margin-left: 10px;
+  }
+  p{
+    color:white;
+    margin-left: 10px;
+
+  }
+  img{
+    height:250px;
+    margin: 20px auto;
+    display:block;
+  }
+}
+.contact-button{
+  padding:8px;
+  font-family: 'Montserrat';
+  font-weight: 100;
+  font-size: 16px;
+  text-align:center;
+}
+.hexagon {
+	width: 150px;
+	height: 75px;
+	background: $theme-navy;
+	position: relative;
+  color:white;
+  top:30px;
+  margin-top: 80px;
+}
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -35px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 35px solid $theme-navy;
+}
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 35px solid $theme-navy;
+}
+.techs{
+  margin:20px 0px;
+  img{
+    margin:15px auto;
+    height:100px;
+    display: block;
+  }
+}
+.port-odd{
+  padding:20px;
+  background-color: $theme-green;
+  height:500px;
+  #kman-monitor{
+    height:450px;
+    margin:-20px;
+  }
+}
+.port-even{
+  padding:20px;
+  background-color: $theme-navy;
+  height:500px;
+}
