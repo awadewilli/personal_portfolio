@@ -5777,10 +5777,38 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@media (max-width: 991px) {
+  .about {
+    height: 450px !important; }
+    .about img {
+      margin: 10px auto; } }
+@media (max-width: 768px) {
+  header ul {
+    float: none !important; }
+
+  .about img {
+    display: none !important; }
+
+  .splash-img {
+    margin-top: 200px !important;
+    height: 500px !important; }
+
+  .splash-img::before {
+    height: 500px !important; }
+
+  .port-odd {
+    height: 900px !important; }
+
+  .port-even {
+    height: 900px !important; } }
 *,
 *::before,
 *::after {
   box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 img {
   max-width: 100%; }
@@ -5788,25 +5816,38 @@ img {
 header {
   font-family: 'Montserrat';
   font-weight: 200;
-  padding: 10px; }
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 50;
+  background-color: white; }
   header h1 {
-    display: inline-block; }
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 100px; }
   header img {
     display: inline-block;
     max-width: 75px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-top: 7px; }
   header ul {
     list-style: none;
     float: right;
-    margin: 25px auto; }
+    margin: 35px auto; }
   header li {
     display: inline-block;
     padding: 0px 10px;
-    border-right: solid 1px #011627; }
+    border-right: solid 1px #011627;
+    text-align: center; }
+  header li:nth-child(4) {
+    border-right: none; }
 
 .splash-img {
   background-image: url("../images/photo-1453928582365-b6ad33cbcf64.jpeg");
   background-size: cover;
+  margin-top: 100px;
   height: 400px;
   position: relative; }
   .splash-img h1 {
@@ -5832,30 +5873,31 @@ header {
   height: 300px; }
   .about h3 {
     color: #2EC4B6;
-    margin-left: 10px; }
+    margin: 20px 0px 10px 20px; }
   .about p {
     color: white;
-    margin-left: 10px; }
+    margin-left: 20px; }
   .about img {
     height: 250px;
     margin: 20px auto;
     display: block; }
 
 .contact-button {
-  padding: 8px;
+  padding-top: 15px;
   font-family: 'Montserrat';
-  font-weight: 100;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
   text-align: center; }
 
 .hexagon {
   width: 150px;
   height: 75px;
   background: #011627;
-  position: relative;
   color: white;
-  top: 30px;
-  margin-top: 80px; }
+  position: relative;
+  margin: 80px auto 0px auto; }
 
 .hexagon:before {
   content: "";
@@ -5895,7 +5937,7 @@ header {
   font-size: 15px;
   text-align: center; }
   .port-odd #kman-monitor {
-    height: 450px;
+    max-height: 450px;
     margin: -20px auto;
     display: block; }
   .port-odd h2 {
@@ -5919,7 +5961,7 @@ header {
   font-size: 15px;
   text-align: center; }
   .port-even #mt-monitor {
-    height: 450px;
+    max-height: 450px;
     margin: -20px auto;
     display: block; }
   .port-even h2 {
@@ -5943,5 +5985,26 @@ header {
   .port-img img:active {
     -webkit-transform: scale(4, 4);
             transform: scale(4, 4); }
+
+.other-projs h3 {
+  max-width: 100%;
+  font-size: 20px; }
+.other-projs h4 {
+  max-width: 100%;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.email-form {
+  margin-top: 25px; }
+
+.headline {
+  font-family: 'Montserrat';
+  font-weight: 100;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+  border-top: solid 2px #2EC4B6;
+  border-bottom: solid 2px #2EC4B6; }
 
 /*# sourceMappingURL=app.css.map */

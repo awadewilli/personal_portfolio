@@ -9,15 +9,15 @@
   <body>
     <div class="container-fluid">
       <header class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6 col-xs-12">
           <img src="./images/logoOct.png" alt="">
           <h1>Austin Williams</h1>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="nav-wrapper">
             <ul>
-              <li>Work</li>
               <li>About</li>
+              <li>Work</li>
               <li>Resume</li>
               <li>Contact</li>
             </ul>
@@ -26,10 +26,10 @@
       </header>
       <div class="row">
         <div class="splash-img">
-          <div class="col-md-8">
+          <div class="col-md-8 col-sm-8 col-xs-12">
             <h1>Web Developer and Graphic Designer</h1>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="contact-button hexagon">
             Contact Me
           </div>
@@ -40,14 +40,17 @@
         </div>
         </div>
       <div class="row about">
-        <div class="col-md-6">
-          <h3>About Me</h3>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Repellat amet quasi, deleniti, quidem eum nostrum explicabo
-             officiis eius autem, provident mollitia voluptates aperiam odio
-             soluta aliquam aspernatur. Delectus, est nam.</p>
+        <div class="col-md-6 col-sm-6">
+          <h3 class="headline">Who I Am</h3>
+          <p> A Native South Carolinian, I am a junior web developer with graphic design sensabilities.
+          I am a graduate of the Clemson University Graphic Communications program and have been working in the Printing Industry
+          for the past four years.During that time, my passion for cool technology,problem solving, and creative power led me to
+          seek new opportunities in the world of web developement by joining the Front-end Engineering course at The Iron Yard Academy.
+          Through a rigorous three months, my time there taught me much about the world of the internet and about myself.
+          I am happy to say I now have the tools to solve real problems and build awesome things in nearly any medium.
+        </p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6">
           <div class="">
             <img src="./images/Austin-Williams---Headshot.png" alt="">
           </div>
@@ -59,22 +62,23 @@
             <div class="table-wrapper row">
               <div class="col-md-8 col-md-offset-2">
                 <div class="row techs">
-                  <div class="col-md-3">
+                  <h1 class="headline">What I know</h1>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
                     <img src="./images/logos/HTML5_logo_and_wordmark.svg">
                     <img src="./images/logos/bootstrap-solid.svg">
                     <img src="./images/logos/adobe-illustrator-cc.svg">
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-3 col-xs-3">
                     <img src="./images/logos/CSS3_and_HTML5_badges.svg">
                     <img src="./images/logos/Backbone.js_logo.svg">
                     <img src="./images/logos/photoshop-cc.svg">
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-sm-3 col-xs-3">
                     <img src="./images/logos/Badge_js-strict.svg">
                     <img src="./images/logos/React.js_logo.svg">
                     <img src="./images/logos/indesign-cc.svg">
                   </div>
-                  <div class="col-md-3 ">
+                  <div class="col-md-3 col-sm-3 col-xs-3">
                     <img src="./images/logos/Sass_Logo_Color.svg">
                     <img src="./images/logos/Git-logo.svg">
                   </div>
@@ -86,11 +90,15 @@
       </div>
       <div class="row portfolio">
         <div class="col-md-12">
+          <div class="row">
+              <h1 class="headline">What I've Done</h1>
+          </div>
           <div class="row port-odd">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
               <img id="kman-monitor" src="./images/kman/karaokeman.png" alt="">
+              <a href="www.thekaraokeman.com" target="_blank"><h3>www.thekaraokeman.com</h3></a>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-5">
               <h2>The Karaoke Man</h2>
               <p>The Karaoke Man is an event management system that allows users to easily host and join
               karaoke parties. As the final project from my time at the Iron Yard
@@ -109,7 +117,7 @@
             </div>
           </div>
           <div class="row port-even">
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-5">
               <h2>Majestic Thai</h2>
               <p>Majestic Thai is a website for a ficticious Thai restaurant intended to allow users to
                  place their own orders and then submit them online. This project is built using Backbone JS and React JS. </p>
@@ -123,25 +131,59 @@
                 <img src="./images/kman/partyfinder.png" alt="">
               </div>
             </div>
-            <div class="col-md-6 col-md-offset-1">
+            <div class="col-md-6 col-sm-6 col-md-offset-1 col-sm-offset-1">
               <img id="mt-monitor" src="./images/mt_monitor.png" alt="">
+              <a href="http://awadewilli.github.io/MajesticThai" target="_blank"><h3>awadewilli.github.io/MajesticThai</h3></a>
             </div>
           </div>
-          <div class="row port-odd">
-            <div class="col-md-4">
+          <div class="row">
+              <h1 class="headline">Other Projects</h1>
+          </div>
+          <div class="row port-odd other-projs">
+            <div class="col-md-4 col-sm-4 col-xs-6">
               <h3>Github Recreation</h3>
-              <img src="#" alt="">
-              <span>This is a brief description of this project</span>
+              <img src="./images/github-clone.png" alt="">
+              <span>Using GitHub's API, this project is a recreation of the repository list of my GitHub profile page.
+              The content is rendered dynamically through the API.</span>
+              <a href="http://awadewilli.github.io/GitHubRepoRecreation" target="_blank"><h4>awadewilli.github.io/GitHubRepoRecreation</h4></a>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4 col-xs-6">
               <h3>Javascript Dynamic Color Clock</h3>
-              <img src="#" alt="">
-              <span>This is a brief description of this project</span>
+              <img src="./images/colorclock.png" alt="">
+              <span>This project is a simple clock application which converts the
+                current time to a color value that corresponds with the background color,
+                making the color of the clock change with the current time.</span>
+                <a href=" http://awadewilli.github.io/ColorClock" target="_blank"><h4>awadewilli.github.io/ColorClock</h4></a>
             </div>
-            <div class="col-md-4">
-              <h3>Surf and Paddle:Pixel Perfect Recreation</h3>
-              <img src="#" alt="">
-              <span>This is a brief description of this project</span>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+              <h3>Swamp Rabbit Cycling</h3>
+              <img src="./images/cyclesite.png" alt="">
+              <span>For this project, I was given simple wireframes for a webpage at both desktop and mobile size.
+              The final product is a simple one page site for a cycling shop that matches those wireframes.</span>
+              <a href="https://github.com/awadewilli/SwampRabbitCycle" target="_blank"><h4>awadewilli.github.io/SwampRabbitCycle</h4></a>
+            </div>
+          </div>
+          <div class="row port-even other-projs">
+            <div class="col-md-4 col-sm-4 col-xs-6">
+              <h3>Surf and Paddle</h3>
+              <img src="./images/SNP.png" alt="">
+              <span>Surf and Paddle, is a project designed to test my skills at pixel perfect recreation.
+                I was given a mockup of the webpage at a specific size and was tasked with recreating the mockup.</span>
+              <a href="http://awadewilli.github.io/GitHubRepoRecreation" target="_blank"><h4>awadewilli.github.io/GitHubRepoRecreation</h4></a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+              <h3>SK8T</h3>
+              <img src="./images/SK8T.png" alt="">
+              <span>SK8T, is another project where I was tasked with recreating a webpage
+              based on a provided mockup only this project was meant to be fully responsive using
+              the Bootstrap grid system. </span>
+                <a href="http://awadewilli.github.io/SK8TResponsiveSite/" target="_blank"><h4>awadewilli.github.io/SK8TResponsiveSite/</h4></a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+              <h3>Tales from the Yard</h3>
+              <img src="./images/chat.png" alt="">
+              <span>This application is a simple browser based chat application built with Backbone and React JS.</span>
+              <a href="http://awadewilli.github.io/7_2_ChatApp" target="_blank"><h4>awadewilli.github.io/7_2_ChatApp</h4></a>
             </div>
           </div>
         </div>
