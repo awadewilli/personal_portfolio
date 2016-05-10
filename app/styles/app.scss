@@ -72,6 +72,18 @@ a{
   text-decoration: none;
   color: inherit;
 }
+a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+a:active{
+  text-decoration: none;
+  color: inherit;
+}
 img {
   max-width: 100%;
 }
@@ -106,9 +118,14 @@ header{
     padding:0px 10px;
     border-right:solid 1px $theme-navy;
     text-align: center;
+    cursor: pointer;
   }
   li:nth-child(4){
     border-right:none;
+  }
+  li:hover{
+    font-weight: bold;
+    color:$theme-red;
   }
 }
 .splash-img{
@@ -170,6 +187,10 @@ header{
   color:white;
   position: relative;
   margin: 80px auto 0px auto;
+  cursor: pointer;
+}
+.hexagon:hover{
+    background: $theme-teal;
 }
 .hexagon:before {
 	content: "";
@@ -181,6 +202,7 @@ header{
 	border-left: 75px solid transparent;
 	border-right: 75px solid transparent;
 	border-bottom: 35px solid $theme-navy;
+  cursor: pointer;
 }
 .hexagon:after {
 	content: "";
@@ -192,6 +214,7 @@ header{
 	border-left: 75px solid transparent;
 	border-right: 75px solid transparent;
 	border-top: 35px solid $theme-navy;
+  cursor: pointer;
 }
 .techs{
   margin:20px 0px;
@@ -277,9 +300,12 @@ header{
     overflow: hidden;
     text-overflow: ellipsis;
   }
-}
-.email-form{
-  margin-top: 25px;
+  img{
+    margin:10px auto;
+  }
+  span{
+    font-size: 10pt;
+  }
 }
 .headline{
   font-family: 'Montserrat';
@@ -289,4 +315,8 @@ header{
   text-align: center;
   border-top: solid 2px $theme-teal;
   border-bottom: solid 2px $theme-teal;
+}
+.contactform{
+padding:25px;
+  
 }
