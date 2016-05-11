@@ -316,7 +316,14 @@ header{
   border-top: solid 2px $theme-teal;
   border-bottom: solid 2px $theme-teal;
 }
-.contactform{
+.contact-info{
 padding:25px;
-  
+  h3{
+    font-family: 'Montserrat';
+    font-weight: normal;
+  }
+  h4{
+    font-family: 'Montserrat';
+    font-weight: 200;
+  }
 }
