@@ -5854,7 +5854,7 @@ header {
     border-right: solid 1px #011627;
     text-align: center;
     cursor: pointer; }
-  header li:nth-child(4) {
+  header li:nth-child(3) {
     border-right: none; }
   header li:hover {
     font-weight: bold;
