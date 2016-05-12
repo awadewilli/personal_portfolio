@@ -16,3 +16,8 @@ $("#contact").click(function() {
         scrollTop: ($(document).height())
     }, 800);
 });
+$(".contact-button").click(function() {
+    $('html, body').animate({
+        scrollTop: ($(document).height())
+    }, 800);
+});
