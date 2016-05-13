@@ -120,6 +120,7 @@ header{
   }
   li{
     display: inline-block;
+    font-size: 12pt;
     padding:0px 10px;
     border-right:solid 1px $theme-navy;
     text-align: center;
@@ -305,7 +306,8 @@ header{
     margin:10px auto;
   }
   span{
-    font-size: 10pt;
+    padding: 3px;
+    font-size: 9pt;
   }
 }
 .headline{
@@ -328,6 +330,9 @@ padding:25px;
     font-weight: 200;
   }
 }
+//////////////////////
+///LightBox Classes///
+/////////////////////
 .lightBox{
   z-index: 100;
   position: fixed;
@@ -346,6 +351,7 @@ padding:25px;
 }
 #lightBox-close:hover{
   transform:scale(1.2,1.2);
+  cursor: pointer;
 }
 #lightBox-content{
   width:100%;
