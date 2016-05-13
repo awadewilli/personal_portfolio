@@ -1,6 +1,8 @@
 console.log("Hello World!");
 var $ = require('jQuery');
-
+var React = require('react');
+var ReactDom = require('react-dom');
+var BehanceStuff = require('./components/graphicDesign.jsx');
 //////////////////////
 //Scrolling Controls//
 /////////////////////
@@ -49,3 +51,8 @@ $('#lightBox-close').click(function() {
   $('.lightBox').addClass('hidden');
   $('.overlay').addClass('hidden');
 });
+//////////////////////////////
+//Render Dynamic Api Content//
+//////////////////////////////
+// ReactDom.render(React.createElement(BehanceStuff),
+// document.getElementById('behance'));
