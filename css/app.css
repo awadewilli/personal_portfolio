@@ -5856,6 +5856,7 @@ header {
     margin: 35px auto; }
   header li {
     display: inline-block;
+    font-size: 12pt;
     padding: 0px 10px;
     border-right: solid 1px #011627;
     text-align: center;
@@ -6020,7 +6021,8 @@ header {
 .other-projs img {
   margin: 10px auto; }
 .other-projs span {
-  font-size: 10pt; }
+  padding: 3px;
+  font-size: 9pt; }
 
 .headline {
   font-family: 'Montserrat';
@@ -6058,7 +6060,8 @@ header {
 
 #lightBox-close:hover {
   -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2); }
+          transform: scale(1.2, 1.2);
+  cursor: pointer; }
 
 #lightBox-content {
   width: 100%; }

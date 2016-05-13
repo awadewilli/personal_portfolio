@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>personal_portfolio</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
@@ -116,14 +118,14 @@
               I was tasked with creating a multipage application with CRUD capabilities that solved a unique problem. To do this I partnered with
               a back-end developer to design our database while, I designed the dynamic user interface and graphics. This application
               is built with a Django/Python back-end, Backbone JS, and React JS. </p>
-              <div class="port-img">
-                <img src="./images/kman/profileview.png" alt="">
+              <div id="km0" class="port-img" project="km">
+                <img count="0" src="./images/kman/profileview.png" alt="">
               </div>
-              <div class="port-img">
-                <img src="./images/kman/songplayer.png" alt="">
+              <div id="km1" class="port-img" project="km">
+                <img count="1" src="./images/kman/songplayer.png" alt="">
               </div>
-              <div class="port-img">
-                <img src="./images/kman/partyfinder.png" alt="">
+              <div id="km2" class="port-img" project="km">
+                <img count="2" src="./images/kman/partyfinder.png" alt="">
               </div>
               <a href="https://github.com/benhigh22/karaoke_man"><h4>View On Github</h4></a>
             </div>
@@ -133,14 +135,14 @@
               <h2>Majestic Thai</h2>
               <p>Majestic Thai is a website for a ficticious Thai restaurant intended to allow users to
                  place their own orders and then submit them online. This project is built using Backbone JS and React JS. </p>
-              <div class="port-img">
-                <img src="./images/mthai-3.png" alt="">
+              <div id="mt0" class="port-img" project="mt">
+                <img count="0" src="./images/mthai-3.png" alt="">
               </div>
-              <div class="port-img">
-                <img src="./images/mthai-1.png" alt="">
+              <div id="mt1" class="port-img" project="mt">
+                <img count="1" src="./images/mthai-1.png" alt="">
               </div>
-              <div class="port-img">
-                <img src="./images/mthai-2.png" alt="">
+              <div id="mt2" class="port-img" project="mt">
+                <img count="2" src="./images/mthai-2.png" alt="">
               </div>
               <a href="http://github.com/awadewilli/MajesticThai"><h4>View On Github</h4></a>
             </div>
@@ -153,7 +155,52 @@
               <h1 class="headline">Other Projects</h1>
           </div>
           <div class="row port-odd other-projs">
-            <div class="col-md-4 col-sm-4 col-xs-6">
+            <div class="slider4">
+              <div class="slide">
+                <h3>Github Recreation</h3>
+                <img src="./images/github-clone.png" alt="">
+                <span>Using GitHub's API, this project is a recreation of the repository list of my GitHub profile page.
+                The content is rendered dynamically through the API.</span>
+                <a href="http://awadewilli.github.io/GitHubRepoRecreation" target="_blank"><h4>awadewilli.github.io/GitHubRepoRecreation</h4></a>
+              </div>
+              <div class="slide">
+                <h3>Javascript Dynamic Color Clock</h3>
+                <img src="./images/colorclock.png" alt="">
+                <span>This project is a simple clock application which converts the
+                  current time to a color value that makes the color of the clock change
+                   with the current time.</span>
+                  <a href=" http://awadewilli.github.io/ColorClock" target="_blank"><h4>awadewilli.github.io/ColorClock</h4></a>
+              </div>
+              <div class="slide">
+                <h3>Swamp Rabbit Cycling</h3>
+                <img src="./images/cyclesite.png" alt="">
+                <span>For this project, I was given simple wireframes for a webpage at both desktop and mobile size.
+                The final product is a simple one page site for a cycling shop that matches those wireframes.</span>
+                <a href="https://github.com/awadewilli/SwampRabbitCycle" target="_blank"><h4>awadewilli.github.io/SwampRabbitCycle</h4></a>
+              </div>
+              <div class="slide">
+                <h3>Surf and Paddle</h3>
+                <img src="./images/SNP.png" alt="">
+                <span>Surf and Paddle, is a project designed to test my skills at pixel perfect recreation.
+                  I was given a mockup of the webpage at a specific size and was tasked with recreating the mockup.</span>
+                <a href="http://awadewilli.github.io/PixelPerfectAssignment" target="_blank"><h4>awadewilli.github.io/PixelPerfectAssignment</h4></a>
+              </div>
+              <div class="slide">
+                <h3>SK8T</h3>
+                <img src="./images/SK8T.png" alt="">
+                <span>SK8T, is another project where I was tasked with recreating a webpage
+                based on a provided mockup only this project was meant to be fully responsive using
+                the Bootstrap grid system. </span>
+                <a href="http://awadewilli.github.io/SK8TResponsiveSite/" target="_blank"><h4>awadewilli.github.io/SK8TResponsiveSite/</h4></a>
+              </div>
+              <div class="slide">
+                <h3>Tales from the Yard</h3>
+                <img src="./images/chat.png" alt="">
+                <span>This application is a simple browser based chat application built with Backbone and React JS.</span>
+                <a href="http://awadewilli.github.io/7_2_ChatApp" target="_blank"><h4>awadewilli.github.io/7_2_ChatApp</h4></a>
+              </div>
+            </div>
+            <!-- <div class="col-md-4 col-sm-4 col-xs-6">
               <h3>Github Recreation</h3>
               <img src="./images/github-clone.png" alt="">
               <span>Using GitHub's API, this project is a recreation of the repository list of my GitHub profile page.
@@ -183,8 +230,8 @@
               <span>Surf and Paddle, is a project designed to test my skills at pixel perfect recreation.
                 I was given a mockup of the webpage at a specific size and was tasked with recreating the mockup.</span>
               <a href="http://awadewilli.github.io/PixelPerfectAssignment" target="_blank"><h4>awadewilli.github.io/PixelPerfectAssignment</h4></a>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-6">
+            </div> -->
+            <!-- <div class="col-md-4 col-sm-4 col-xs-6">
               <h3>SK8T</h3>
               <img src="./images/SK8T.png" alt="">
               <span>SK8T, is another project where I was tasked with recreating a webpage
@@ -197,7 +244,7 @@
               <img src="./images/chat.png" alt="">
               <span>This application is a simple browser based chat application built with Backbone and React JS.</span>
               <a href="http://awadewilli.github.io/7_2_ChatApp" target="_blank"><h4>awadewilli.github.io/7_2_ChatApp</h4></a>
-            </div>
+            </div> -->
           </div>
           <div class="row contact-info">
             <div>
@@ -218,6 +265,8 @@
         </div>
       </div>
     </div>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/bundle.js"></script>
   </body>
 </html>
