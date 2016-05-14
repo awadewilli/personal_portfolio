@@ -6034,7 +6034,9 @@ header {
   border-bottom: solid 2px #2EC4B6; }
 
 .contact-info {
-  padding: 25px; }
+  padding: 25px;
+  color: white;
+  background-color: #011627; }
   .contact-info h3 {
     font-family: 'Montserrat';
     font-weight: normal; }
@@ -6078,4 +6080,26 @@ header {
 .make-large {
   -webkit-transform: scale(3, 3);
           transform: scale(3, 3); }
+
+#behance-logo {
+  height: 30px;
+  margin-bottom: 8px;
+  margin-right: 10px; }
+
+#linkedin-logo {
+  width: 80px;
+  margin-bottom: 8px;
+  margin-right: 5px; }
+
+.glyphicon-envelope {
+  margin-right: 10px; }
+
+.contact-info h4 {
+  font-weight: bold;
+  font-size: 15pt;
+  color: #E71D36;
+  display: inline-block;
+  padding-top: 10px;
+  margin: 0px; }
+
 /*# sourceMappingURL=app.css.map */
