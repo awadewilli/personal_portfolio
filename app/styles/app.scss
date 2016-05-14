@@ -321,6 +321,8 @@ header{
 }
 .contact-info{
 padding:25px;
+color:white;
+background-color: $theme-navy;
   h3{
     font-family: 'Montserrat';
     font-weight: normal;
@@ -368,4 +370,26 @@ padding:25px;
 }
 .make-large{
   transform:scale(3,3);
+}
+#behance-logo{
+  height:30px;
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+#linkedin-logo{
+  width:80px;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+.glyphicon-envelope{
+  margin-right: 10px;
+}
+.contact-info h4{
+  font-weight: bold;
+  font-size: 15pt;
+  color:$theme-red;
+  display: inline-block;
+  padding-top: 10px;
+  margin: 0px;
+
 }
