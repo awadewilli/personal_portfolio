@@ -6122,6 +6122,11 @@ header {
   margin-bottom: 8px;
   margin-right: 5px; }
 
+#mail-logo {
+  height: 15px;
+  margin-bottom: 8px;
+  margin-right: 10px; }
+
 .glyphicon-envelope {
   margin-right: 10px; }
 
