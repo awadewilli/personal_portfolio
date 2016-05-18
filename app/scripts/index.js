@@ -13,7 +13,7 @@ $("#about").click(function() {
 });
 $("#work").click(function() {
     $('html, body').animate({
-        scrollTop: (1150)
+        scrollTop: (1280)
     }, 700);
 });
 $("#contact").click(function() {
@@ -51,6 +51,14 @@ $('#lightBox-close').click(function() {
   $('.lightBox').addClass('hidden');
   $('.overlay').addClass('hidden');
 });
+$(".card").click(function(){
+  $(this).toggleClass('flipped');
+});
+$(".card").mouseleave(function(){
+  $(this).removeClass('flipped');
+});
+
+
 //////////////////////////////
 //Render Dynamic Api Content//
 //////////////////////////////
