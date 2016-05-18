@@ -2,7 +2,7 @@ $theme-red:#E71D36;
 $theme-teal:#2EC4B6;
 $theme-green:#EFFEE9;
 $theme-navy:#011627;
-
+@import url(https://fonts.googleapis.com/css?family=Karma:400,500,600);
 @font-face {
   font-family: 'Montserrat';
   src:  url('../fonts/Montserrat-Regular.otf');
@@ -61,6 +61,9 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
   .port-even{
     height:900px !important;
   }
+  .other-projs {
+    height:500px  !important;
+  }
 }
 body{
   height:100%;
@@ -95,7 +98,7 @@ img {
 header{
   font-family: 'Montserrat';
   font-weight: 200;
-  padding:10px;
+  padding:5px;
   position: fixed;
   top:0px;
   width: 100%;
@@ -107,22 +110,24 @@ header{
   h1{
     display: inline-block;
     position: absolute;
+    margin-top: 15px;
     top:8px;
     left:100px;
   }
   img{
     display: inline-block;
     max-width: 75px;
-    margin-bottom: 10px;
-    margin-top: 7px;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
   ul{
     list-style: none;
     float:right;
-    margin:35px auto;
+    margin:26px auto;
   }
   li{
     display: inline-block;
+    margin-top: 2px;
     font-size: 12pt;
     padding:0px 10px;
     border-right:solid 1px $theme-navy;
@@ -140,7 +145,7 @@ header{
 .splash-img{
   background-image: url('../images/photo-1453928582365-b6ad33cbcf64.jpeg');
   background-size: cover;
-  margin-top: 100px;
+  margin-top: 95px;
   height:400px;
   position: relative;
     h1{
@@ -164,15 +169,18 @@ header{
 }
 .about{
   background-color: $theme-navy;
-  height:300px;
+  height:320px;
   h3{
+    font-size: 35px;
     color:$theme-teal;
     margin: 20px 0px 10px 20px;
   }
   p{
+    font-family: 'Karma',serif;
+    font-weight: normal;
+    font-size: 11pt;
     color:white;
     margin-left: 20px;
-
   }
   img{
     height:250px;
@@ -257,9 +265,6 @@ header{
   padding:20px;
   background-color: $theme-green;
   height:500px;
-  font-family: 'Montserrat';
-  font-weight: 200;
-  font-size: 15px;
   text-align: center;
 
   #kman-monitor{
@@ -278,6 +283,9 @@ header{
     text-overflow: ellipsis;
   }
   p{
+    font-family: 'Karma',serif;
+    font-weight: normal;
+    font-size: 16px;
     max-height: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -294,9 +302,6 @@ header{
   background-color: $theme-navy;
   color:$theme-green;
   height:500px;
-  font-family: 'Montserrat';
-  font-weight: 200;
-  font-size: 15px;
   text-align: center;
   #mt-monitor{
     max-height:450px;
@@ -312,6 +317,9 @@ header{
     font-weight: bold;
   }
   p{
+      font-family: 'Karma',serif;
+      font-weight: normal;
+      font-size: 16px;
       margin-bottom: 10px;
       padding:15px;
       max-height: 200px;
@@ -332,6 +340,9 @@ header{
 }
 .other-projs{
   h3{
+    font-family: "Montserrat";
+    color:$theme-red;
+    text-transform: uppercase;
     max-width: 100%;
     font-size: 20px;
   }
@@ -345,8 +356,9 @@ header{
     margin:10px auto;
   }
   span{
+    font-family: 'Karma',serif;
     padding: 3px;
-    font-size: 9pt;
+    font-size: 10pt;
   }
 }
 .headline{
@@ -357,6 +369,42 @@ header{
   text-align: center;
   border-top: solid 2px $theme-teal;
   border-bottom: solid 2px $theme-teal;
+}
+.print-design{
+    text-align: center;
+    position: relative;
+
+  img{
+    display: block;
+    max-height: 200px;
+    margin:5px auto;
+  }
+  h3{
+    font-family: "Montserrat";
+    color:$theme-red;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-size: 20px;
+  }
+  p{
+    font-family: 'Karma',serif;
+    padding: 3px;
+    font-size: 10pt;
+    display: inline-block;
+    span{
+      font-family: "Montserrat";
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+.img-wrap{
+  border-radius: 2px;
+  // cursor:pointer;
+  // box-shadow:  3px 1px 8px 0px #666;
+  border: solid 1px #ccc;
+  height:270px;
+  padding:15px;
 }
 .contact-info{
 padding:25px;
@@ -419,6 +467,11 @@ background-color: $theme-navy;
   width:80px;
   margin-bottom: 8px;
   margin-right: 5px;
+}
+#mail-logo{
+  height:15px;
+  margin-bottom: 8px;
+  margin-right: 10px;
 }
 .glyphicon-envelope{
   margin-right: 10px;
