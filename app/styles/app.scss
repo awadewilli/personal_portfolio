@@ -102,7 +102,7 @@ header{
   position: fixed;
   top:0px;
   width: 100%;
-  z-index: 50;
+  z-index: 10000;
   background-color: white;
   -webkit-box-shadow: 3px 1px 8px 0px #666;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    3px 1px 8px 0px #666;  /* Firefox 3.5 - 3.6 */
@@ -265,7 +265,7 @@ header{
   padding:20px;
   background-color: $theme-green;
   height:500px;
-  text-align: center;
+  text-align: left;
 
   #kman-monitor{
     max-height:450px;
@@ -295,6 +295,10 @@ header{
   h3{
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
+  }
+  h4{
+    text-align: center;
   }
 }
 .port-even{
@@ -302,7 +306,7 @@ header{
   background-color: $theme-navy;
   color:$theme-green;
   height:500px;
-  text-align: center;
+  text-align: left;
   #mt-monitor{
     max-height:450px;
     margin:-20px auto;
@@ -329,6 +333,10 @@ header{
   h3{
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
+  }
+  h4{
+    text-align: center;
   }
 }
 .port-img{
@@ -415,6 +423,9 @@ background-color: $theme-navy;
     font-weight: normal;
   }
   h4{
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-family: 'Montserrat';
     font-weight: 200;
   }
