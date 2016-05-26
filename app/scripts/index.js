@@ -47,18 +47,20 @@ $('.port-img').click(function() {
     }
   });
 });
-$('#lightBox-close').click(function() {
-  $('.lightBox').addClass('hidden');
-  $('.overlay').addClass('hidden');
-});
-$(".card").click(function(){
-  $(this).toggleClass('flipped');
-});
-$(".card").mouseleave(function(){
-  $(this).removeClass('flipped');
-});
+  $('#lightBox-close').click(function() {
+    $('.lightBox').addClass('hidden');
+    $('.overlay').addClass('hidden');
+  });
+  $(".card").click(function(){
+    $(this).toggleClass('flipped');
+  });
+  $(".card").mouseleave(function(){
+    $(this).removeClass('flipped');
+  });
 
-
+  $(".title").click(function(){
+    $(this).next().slideToggle("slow");
+  });
 //////////////////////////////
 //Render Dynamic Api Content//
 //////////////////////////////
