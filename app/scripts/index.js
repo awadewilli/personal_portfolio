@@ -1,8 +1,7 @@
-console.log("Hello World!");
+
 var $ = require('jQuery');
-var React = require('react');
-var ReactDom = require('react-dom');
 var BehanceStuff = require('./components/graphicDesign.jsx');
+var Masonry = require('masonry-layout');
 //////////////////////
 //Scrolling Controls//
 /////////////////////
@@ -61,6 +60,17 @@ $('.port-img').click(function() {
   $(".title").click(function(){
     $(this).next().slideToggle("slow");
   });
+
+  var elem = document.querySelector('.grid');
+  var msnry = new Masonry( elem, {
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 350,
+     gutter:15,
+
+  });
+
+
 //////////////////////////////
 //Render Dynamic Api Content//
 //////////////////////////////
